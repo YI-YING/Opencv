@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29140A9B125DA62490D3A675 /* libPods-Practice2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFAAF7D0A629E4C3BFE7F73 /* libPods-Practice2.a */; };
 		2D7628FC1E7FFCE500CCA178 /* UIImage+Opencv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D7628FB1E7FFCE400CCA178 /* UIImage+Opencv.mm */; };
 		2D7628FE1E7FFEC100CCA178 /* lena.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 2D7628FD1E7FFEC100CCA178 /* lena.bmp */; };
 		2D8D9C151E7FCB4F003CCCA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8D9C141E7FCB4F003CCCA8 /* main.m */; };
@@ -15,11 +16,11 @@
 		2D8D9C1E1E7FCB4F003CCCA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D9C1C1E7FCB4F003CCCA8 /* Main.storyboard */; };
 		2D8D9C201E7FCB4F003CCCA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D9C1F1E7FCB4F003CCCA8 /* Assets.xcassets */; };
 		2D8D9C231E7FCB4F003CCCA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D9C211E7FCB4F003CCCA8 /* LaunchScreen.storyboard */; };
-		4263583AECE5DE61E2DD9B3F /* libPods-Practice2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EE70DFE8FAF65791F09F86 /* libPods-Practice2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24984C1EAFFCBFAB66C690CD /* Pods-Practice2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practice2/Pods-Practice2.release.xcconfig"; sourceTree = "<group>"; };
+		28D891293A7D0E08F8613BDD /* Pods-Practice2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practice2/Pods-Practice2.debug.xcconfig"; sourceTree = "<group>"; };
+		2AFAAF7D0A629E4C3BFE7F73 /* libPods-Practice2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Practice2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7628FA1E7FFCE400CCA178 /* UIImage+Opencv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Opencv.h"; sourceTree = "<group>"; };
 		2D7628FB1E7FFCE400CCA178 /* UIImage+Opencv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+Opencv.mm"; sourceTree = "<group>"; };
 		2D7628FD1E7FFEC100CCA178 /* lena.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = lena.bmp; sourceTree = "<group>"; };
@@ -33,8 +34,7 @@
 		2D8D9C1F1E7FCB4F003CCCA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D8D9C221E7FCB4F003CCCA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D8D9C241E7FCB4F003CCCA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6478C544A4C60F6351D605AB /* Pods-Practice2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practice2/Pods-Practice2.debug.xcconfig"; sourceTree = "<group>"; };
-		84EE70DFE8FAF65791F09F86 /* libPods-Practice2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Practice2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A972C8D74865C40AC3720AFF /* Pods-Practice2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practice2/Pods-Practice2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,18 +42,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4263583AECE5DE61E2DD9B3F /* libPods-Practice2.a in Frameworks */,
+				29140A9B125DA62490D3A675 /* libPods-Practice2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B1179F0E19E15DD9015BF25 /* Pods */ = {
+		04E97ACAB0ED700F417DD553 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6478C544A4C60F6351D605AB /* Pods-Practice2.debug.xcconfig */,
-				24984C1EAFFCBFAB66C690CD /* Pods-Practice2.release.xcconfig */,
+				28D891293A7D0E08F8613BDD /* Pods-Practice2.debug.xcconfig */,
+				A972C8D74865C40AC3720AFF /* Pods-Practice2.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -63,8 +63,8 @@
 			children = (
 				2D8D9C121E7FCB4F003CCCA8 /* Practice2 */,
 				2D8D9C111E7FCB4F003CCCA8 /* Products */,
-				2B1179F0E19E15DD9015BF25 /* Pods */,
-				58F47007B3A99066797FECAF /* Frameworks */,
+				04E97ACAB0ED700F417DD553 /* Pods */,
+				DA4591BA2FD31E81B2E39D3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +103,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		58F47007B3A99066797FECAF /* Frameworks */ = {
+		DA4591BA2FD31E81B2E39D3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84EE70DFE8FAF65791F09F86 /* libPods-Practice2.a */,
+				2AFAAF7D0A629E4C3BFE7F73 /* libPods-Practice2.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 		};
 		2D8D9C281E7FCB50003CCCA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6478C544A4C60F6351D605AB /* Pods-Practice2.debug.xcconfig */;
+			baseConfigurationReference = 28D891293A7D0E08F8613BDD /* Pods-Practice2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UCXGL3HMZX;
@@ -369,7 +369,7 @@
 		};
 		2D8D9C291E7FCB50003CCCA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24984C1EAFFCBFAB66C690CD /* Pods-Practice2.release.xcconfig */;
+			baseConfigurationReference = A972C8D74865C40AC3720AFF /* Pods-Practice2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UCXGL3HMZX;

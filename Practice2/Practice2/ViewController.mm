@@ -75,11 +75,11 @@ using namespace std;
 - (double)MAEImage1:(Mat)image1 withImage2:(Mat)image2
 {
     double dMAE = 0;
-    int iMN = image1.rows * image1.cols;
+    double dMN = image1.rows * image1.cols;
 
     for (int y = 0; y < image1.rows; y++)
         for (int x = 0; x < image1.cols; x++)
-            dMAE += (abs(image2.at<uchar>(y, x) - image1.at<uchar>(y, x)) / iMN);
+            dMAE += (abs(image2.at<uchar>(y, x) - image1.at<uchar>(y, x)) / dMN);
     
     return dMAE;
 }
@@ -87,11 +87,12 @@ using namespace std;
 - (double)RMSImage1:(Mat)image1 withImage2:(Mat)image2
 {
     double dRMS = 0;
-    int iMN = image1.rows * image1.cols;
+    double dMN = image1.rows * image1.cols;
     
     for (int y = 0; y < image1.rows; y++)
         for (int x = 0; x < image1.cols; x++)
-            dRMS += sqrt(pow(image2.at<uchar>(y, x) - image1.at<uchar>(y, x), 2) / iMN);
+            dRMS += pow(image2.at<uchar>(y, x) - image1.at<uchar>(y, x), 2) / dMN;
+    dRMS = sqrt(dRMS);
     
     return dRMS;
 }
@@ -99,13 +100,13 @@ using namespace std;
 - (double)SNRImage1:(Mat)image1 withImage2:(Mat)image2
 {
     double dSNR = 0;
-    int iMN = image1.rows * image1.cols;
+    double dMN = image1.rows * image1.cols;
     
     for (int y = 0; y < image1.rows; y++)
         for (int x = 0; x < image1.cols; x++)
             dSNR += pow(image2.at<uchar>(y, x) - image1.at<uchar>(y, x), 2);
     
-    dSNR = 10 * log(iMN * pow(255, 2) / dSNR);
+    dSNR = 10 * log10(dMN * pow(255, 2) / dSNR);
     
     return dSNR;
 }

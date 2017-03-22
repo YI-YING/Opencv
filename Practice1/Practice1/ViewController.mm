@@ -31,13 +31,6 @@ using namespace std;
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    
-}
-
 #pragma mark - Data Processing
 - (void)showPoker
 {
