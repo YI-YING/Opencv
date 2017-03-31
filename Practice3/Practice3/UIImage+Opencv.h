@@ -9,6 +9,7 @@
 #import <opencv2/opencv.hpp>
 #import <UIKit/UIKit.h>
 
+//Add Medthod for transform UIImage to/from Mat format
 @interface UIImage (Opencv)
 
 - (cv::Mat)cvMatGray;

@@ -8,12 +8,28 @@
 
 #import <Foundation/Foundation.h>
 
+//Define Palette Constant
+typedef NS_ENUM(NSInteger, PaletteColorNumber) {
+    Palette8Colors = 0,
+    Palette16Colors,
+    Palette216Colors,
+    Palette256Colors
+};
+
+//Define Palette_Color_Set struct
+typedef struct {
+    unsigned char ucRed;
+    unsigned char ucGreen;
+    unsigned char ucBlue;
+} Palette_Color_Set;
+
 @interface Palette : NSObject
 
-@property (nonatomic, readonly) unsigned char *blue;
-@property (nonatomic, readonly) unsigned char *green;
-@property (nonatomic, readonly) unsigned char *red;
+@property (nonatomic, strong) NSData *nsdBlue;
+@property (nonatomic, strong) NSData *nsdGreen;
+@property (nonatomic, strong) NSData *nsdRed;
+@property (nonatomic) NSData *nsdColorSet;
 
-- (Palette *)initPaletteWithColorNum:(int)nums;
++ (instancetype)paletteWithHowManyColors:(PaletteColorNumber)paletteColorNumber;
 
 @end

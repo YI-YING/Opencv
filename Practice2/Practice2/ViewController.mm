@@ -60,7 +60,7 @@ using namespace std;
 - (void)quantizeMat:(Mat)image1 toNColors:(int)n storeAt:(Mat)image2
 {
     unsigned char *pv = new unsigned char[n];
-    int iInterval = (256 / (n - 1));
+    int iInterval = (255 / (n - 1));
     
     for (int i = 0; i < n; i++)
         pv[i] = i * iInterval;
