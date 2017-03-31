@@ -11,16 +11,8 @@
 using namespace std;
 using namespace cv;
 
-typedef struct {
-    unsigned char Blue;
-    unsigned char Green;
-    unsigned char Red;
-} Palette_COLOR_TYPE;
-
-const int iColorNum = 256;
 const int iWidth = 400, iHeight = 704, iCellWidth = 50, iCellHeight = 22;
 const int iCellRows = iHeight / iCellHeight, iCellCols = iWidth / iCellWidth;
-Palette_COLOR_TYPE palette;
 
 @interface ViewController ()
 
@@ -38,6 +30,7 @@ Palette_COLOR_TYPE palette;
     
     UIImageView *uiimageview = [[UIImageView alloc] initWithImage:[UIImage UIImageFromCVMat:matCanvas]];
     uiimageview.frame = CGRectMake(0, 20, iWidth, iHeight);
+    
     
     [self.view addSubview:uiimageview];
 }

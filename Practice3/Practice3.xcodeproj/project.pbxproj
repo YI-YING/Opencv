@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D49AF471E8D9318001AAF13 /* Palette.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D49AF461E8D9318001AAF13 /* Palette.mm */; };
 		2DE9F7251E8C26AA007FB644 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9F7241E8C26AA007FB644 /* main.m */; };
 		2DE9F7281E8C26AA007FB644 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9F7271E8C26AA007FB644 /* AppDelegate.m */; };
 		2DE9F72B1E8C26AB007FB644 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9F72A1E8C26AB007FB644 /* ViewController.mm */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D49AF451E8D9318001AAF13 /* Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palette.h; sourceTree = "<group>"; };
+		2D49AF461E8D9318001AAF13 /* Palette.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Palette.mm; sourceTree = "<group>"; };
 		2DE9F7201E8C26AA007FB644 /* Practice3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE9F7241E8C26AA007FB644 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DE9F7261E8C26AA007FB644 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 			children = (
 				2DE9F7291E8C26AB007FB644 /* ViewController.h */,
 				2DE9F72A1E8C26AB007FB644 /* ViewController.mm */,
+				2D49AF451E8D9318001AAF13 /* Palette.h */,
+				2D49AF461E8D9318001AAF13 /* Palette.mm */,
 				2DE9F72C1E8C26AB007FB644 /* Main.storyboard */,
 				2DE9F72F1E8C26AB007FB644 /* Assets.xcassets */,
 				2DE9F7311E8C26AB007FB644 /* LaunchScreen.storyboard */,
@@ -235,6 +240,7 @@
 				2DE9F72B1E8C26AB007FB644 /* ViewController.mm in Sources */,
 				2DE9F7281E8C26AA007FB644 /* AppDelegate.m in Sources */,
 				2DE9F7251E8C26AA007FB644 /* main.m in Sources */,
+				2D49AF471E8D9318001AAF13 /* Palette.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
