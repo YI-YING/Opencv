@@ -58,12 +58,19 @@ using namespace cv;
     uchar *ucRed = (uchar *)palette.nsdRed.bytes;
     uchar *ucGreen = (uchar *)palette.nsdGreen.bytes;
     uchar *ucBlue = (uchar *)palette.nsdBlue.bytes;
-    
+
+    double dRedIndex, dGreenIndex, dBlueIndex;
+
     for (int y = 0; y < image1.rows; y++)
         for (int x = 0; x < image1.cols; x++) {
-            image1.at<Vec3b>(y, x)[0] = ucBlue[image1.at<Vec3b>(y, x)[0] / iBInterval];
-            image1.at<Vec3b>(y, x)[1] = ucGreen[image1.at<Vec3b>(y, x)[1] / iGInterval];
-            image1.at<Vec3b>(y, x)[2] = ucRed[image1.at<Vec3b>(y, x)[2] / iRInterval];
+            dRedIndex = (double)image1.at<Vec4b>(y, x)[0] / iRInterval + 0.5;
+            dGreenIndex = (double)image1.at<Vec4b>(y, x)[1] / iGInterval + 0.5;
+            dBlueIndex = (double)image1.at<Vec4b>(y, x)[2] / iBInterval + 0.5;
+
+            image1.at<Vec4b>(y, x)[0] = ucRed[int(dRedIndex)];
+            image1.at<Vec4b>(y, x)[1] = ucGreen[int(dGreenIndex)];
+            image1.at<Vec4b>(y, x)[2] = ucBlue[int(dBlueIndex)];
+
         }
     
 }
