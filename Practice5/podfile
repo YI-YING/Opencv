@@ -1,0 +1,3 @@
+target 'Practice5' do
+pod 'OpenCV', '~> 3.1'
+end
